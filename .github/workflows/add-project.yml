@@ -2,17 +2,12 @@ name: Add Project
 on:
   workflow_dispatch:
     inputs:
-      index:
-        description: 'Index Number'
+      name:
+        description: 'Name'
         required: true
-      repo_name:
-        description: 'Repository Name (user/repo)'
+      url:
+        description: 'Repo URL'
         required: true
-      api_name:
-        description: 'API Name'
-        required: true
-      live_url:
-        description: 'Hosted URL of the project'        
 concurrency:
     group: add-project
     cancel-in-progress: false
@@ -27,10 +22,10 @@ jobs:
          run: |
             git config pull.rebase true || true
             git pull || true
-            git submodule add https://github.com/${{ github.event.inputs.repo_name }} "${{ github.event.inputs.index }}-${{ github.event.inputs.api_name }}-API"
+            git submodule add ${{ github.event.inputs.url }} "${{ github.event.inputs.name }}"
        - name: Commit changes
          run: |
-            git config user.name nikiljos-bot
+            git config user.name bot
             git config user.email bot@nikjos.in
             git add --all || true
             git commit -m "Added ${{ github.event.inputs.api_name }}" || true
