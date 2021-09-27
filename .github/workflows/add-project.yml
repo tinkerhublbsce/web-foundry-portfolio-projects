@@ -28,5 +28,5 @@ jobs:
             git config user.name bot
             git config user.email bot@nikjos.in
             git add --all || true
-            git commit -m "Added ${{ github.event.inputs.api_name }}" || true
+            git commit -m "Added New Submodule" || true
             git push --quiet
