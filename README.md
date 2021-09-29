@@ -1,7 +1,7 @@
 ## Portfolio Projects
 ### by Web Foundry Participants
 
-#### Submissions
+## Submissions
 |Name|Repo URL|Hosted URL|
 |---|---|---|
 |SWATHI K|[https://github.com/swathi-athi/portfolio](https://github.com/swathi-athi/portfolio)|[https://swathi-athi.github.io/portfolio/](https://swathi-athi.github.io/portfolio/)|
