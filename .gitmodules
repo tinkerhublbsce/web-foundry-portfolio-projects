@@ -16,3 +16,6 @@
 [submodule "MOHAMMAD SAIFUDDIN "]
 	path = "MOHAMMAD SAIFUDDIN "
 	url = https://github.com/Sa3fu/Saifuddin
+[submodule "SREEDEEP CV"]
+	path = SREEDEEP CV
+	url = https://github.com/rogueloop/portfolio
